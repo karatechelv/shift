@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Karatech Shift | Supervisor</title>
+
+<link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="topbar">
+
+        <div>
+
+            <h1>🔄 چرخه شیفت</h1>
+
+            <span>پنل سرپرستار</span>
+
+        </div>
+
+        <div>
+
+            <span id="statusBadge"></span>
+
+            <button id="logoutBtn">
+
+                خروج
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <section id="supervisorInfo"></section>
+
+    <section id="departmentBar"></section>
+
+    <nav class="tabs">
+
+        <button class="tab active" data-tab="schedule">
+
+            📅 برنامه شیفت
+
+        </button>
+
+        <button class="tab" data-tab="staff">
+
+            👥 پرسنل
+
+        </button>
+
+        <button class="tab" data-tab="requests">
+
+            📩 درخواست‌ها
+
+        </button>
+
+        <button class="tab" data-tab="notifications">
+
+            🔔 اعلانات
+
+        </button>
+
+        <button class="tab" data-tab="report">
+
+            📊 گزارش اعلانات
+
+        </button>
+
+        <button class="tab" data-tab="rules">
+
+            ⚖️ قوانین
+
+        </button>
+
+        <button class="tab" data-tab="profile">
+
+            👤 پروفایل پرسنل
+
+        </button>
+
+        <button class="tab" data-tab="settings">
+
+            ⚙️ تنظیمات
+
+        </button>
+
+    </nav>
+
+    <main>
+
+        <section id="scheduleView"></section>
+
+        <section id="staffView" hidden></section>
+
+        <section id="requestsView" hidden></section>
+
+        <section id="notificationsView" hidden></section>
+
+        <section id="reportView" hidden></section>
+
+        <section id="rulesView" hidden></section>
+
+        <section id="profileView" hidden></section>
+
+        <section id="settingsView" hidden></section>
+
+    </main>
+
+</div>
+
+<script type="module" src="./js/app.js"></script>
+
+</body>
+
+</html>
