@@ -1,27 +1,3 @@
-export const state = {
+import { loadData } from "./storage.js";
 
-    supervisor:{
-
-        id:1,
-
-        name:"",
-
-        hospital:"",
-
-        department:"",
-
-        code:""
-
-    },
-
-    staffs:[],
-
-    schedules:[],
-
-    requests:[],
-
-    notifications:[],
-
-    rules:[]
-
-};
+export const state = loadData();
