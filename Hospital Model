@@ -1,24 +1,24 @@
-export class Hospital{
+export class Hospital {
 
-    constructor(){
+    constructor() {
 
-        this.id=crypto.randomUUID();
+        this.id = crypto.randomUUID();
 
-        this.name="";
+        this.code = "";
 
-        this.code="";
+        this.name = "";
 
-        this.address="";
+        this.logo = "";
 
-        this.phone="";
+        this.address = "";
 
-        this.email="";
+        this.phone = "";
 
-        this.logo="";
+        this.email = "";
 
-        this.active=true;
+        this.departments = [];
 
-        this.createdAt=new Date().toISOString();
+        this.active = true;
 
     }
 
