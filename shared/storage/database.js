@@ -1,41 +1,43 @@
-import { defaultData } from "./defaultData.js";
+const STORAGE_KEY = "nurse_system_data";
 
-const STORAGE_KEY = "karatech_database";
+function getDefaultData() {
+    return {
+        hospitals: [],
+        supervisors: [],
+        staff: [],
+        requests: [],
+        requestHistory: [],
+        schedules: {},
+        settings: {}
+    };
+}
 
-export class Database {
-
-    static load() {
-
+export function loadDatabase() {
+    try {
         const json = localStorage.getItem(STORAGE_KEY);
 
         if (!json) {
-
-            this.save(defaultData);
-
-            return structuredClone(defaultData);
-
+            const data = getDefaultData();
+            saveDatabase(data);
+            return data;
         }
 
         return JSON.parse(json);
 
-    }
+    } catch {
 
-    static save(data) {
-
-        localStorage.setItem(
-
-            STORAGE_KEY,
-
-            JSON.stringify(data)
-
-        );
+        const data = getDefaultData();
+        saveDatabase(data);
+        return data;
 
     }
+}
 
-    static reset() {
+export function saveDatabase(data) {
 
-        this.save(defaultData);
-
-    }
+    localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify(data)
+    );
 
 }
