@@ -1,0 +1,21 @@
+export class ShiftTemplate {
+
+    constructor() {
+
+        this.id = crypto.randomUUID();
+
+        this.name = "";
+
+        this.color = "";
+
+        this.startTime = "";
+
+        this.endTime = "";
+
+        this.hours = 0;
+
+        this.night = false;
+
+    }
+
+}
