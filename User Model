@@ -1,0 +1,27 @@
+export class User {
+
+    constructor() {
+
+        this.id = crypto.randomUUID();
+
+        this.username = "";
+
+        this.passwordHash = "";
+
+        this.role = "";
+
+        this.hospitalId = "";
+
+        this.departmentId = "";
+
+        this.staffId = "";
+
+        this.permissions = [];
+
+        this.lastLogin = null;
+
+        this.active = true;
+
+    }
+
+}
