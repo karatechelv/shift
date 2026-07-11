@@ -1,0 +1,49 @@
+export class Staff{
+
+    constructor(){
+
+        this.id=crypto.randomUUID();
+
+        this.hospitalId="";
+
+        this.departmentId="";
+
+        this.wardId="";
+
+        this.role="staff";
+
+        this.employeeCode="";
+
+        this.username="";
+
+        this.password="";
+
+        this.firstName="";
+
+        this.lastName="";
+
+        this.fullName="";
+
+        this.nationalCode="";
+
+        this.mobile="";
+
+        this.gender="";
+
+        this.birthDate="";
+
+        this.education="";
+
+        this.employmentType="";
+
+        this.position="";
+
+        this.skills=[];
+
+        this.permissions=[];
+
+        this.active=true;
+
+    }
+
+}
