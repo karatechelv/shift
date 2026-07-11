@@ -1,0 +1,21 @@
+export class Department{
+
+    constructor(){
+
+        this.id=crypto.randomUUID();
+
+        this.hospitalId="";
+
+        this.name="";
+
+        this.code="";
+
+        this.floor="";
+
+        this.capacity=0;
+
+        this.active=true;
+
+    }
+
+}
