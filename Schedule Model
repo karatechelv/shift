@@ -1,0 +1,27 @@
+export class Schedule{
+
+    constructor(){
+
+        this.id=crypto.randomUUID();
+
+        this.hospitalId="";
+
+        this.departmentId="";
+
+        this.year=0;
+
+        this.month=0;
+
+        this.days=[];
+
+        this.staffs=[];
+
+        this.status="draft";
+
+        this.createdBy="";
+
+        this.createdAt=new Date().toISOString();
+
+    }
+
+}
