@@ -1,0 +1,21 @@
+export class Shift{
+
+    constructor(){
+
+        this.day=1;
+
+        this.type="OFF";
+
+        this.start="";
+
+        this.end="";
+
+        this.locked=false;
+
+        this.manual=false;
+
+        this.note="";
+
+    }
+
+}
