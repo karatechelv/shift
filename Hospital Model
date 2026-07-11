@@ -1,0 +1,25 @@
+export class Hospital{
+
+    constructor(){
+
+        this.id=crypto.randomUUID();
+
+        this.name="";
+
+        this.code="";
+
+        this.address="";
+
+        this.phone="";
+
+        this.email="";
+
+        this.logo="";
+
+        this.active=true;
+
+        this.createdAt=new Date().toISOString();
+
+    }
+
+}
