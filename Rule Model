@@ -1,0 +1,29 @@
+export class Rule {
+
+    constructor() {
+
+        this.id = crypto.randomUUID();
+
+        this.hospitalId = "";
+
+        this.departmentId = "";
+
+        this.staffId = "";
+
+        this.maxNight = 8;
+
+        this.minOff = 4;
+
+        this.maxWorkDays = 6;
+
+        this.fixedShift = null;
+
+        this.lockedDays = [];
+
+        this.leaveDays = [];
+
+        this.enabled = true;
+
+    }
+
+}
