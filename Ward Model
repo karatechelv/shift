@@ -1,0 +1,19 @@
+export class Ward{
+
+    constructor(){
+
+        this.id=crypto.randomUUID();
+
+        this.departmentId="";
+
+        this.name="";
+
+        this.beds=0;
+
+        this.gender="mixed";
+
+        this.active=true;
+
+    }
+
+}
