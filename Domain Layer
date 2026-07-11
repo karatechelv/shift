@@ -1,0 +1,9 @@
+shared/
+
+domain/
+
+models/
+repositories/
+services/
+events/
+validators/
